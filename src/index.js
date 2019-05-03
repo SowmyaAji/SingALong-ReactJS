@@ -73,8 +73,9 @@ class App extends Component {
           </div>
 
         </div>
-        );
-      }
-    }
-    
+      </div>
+    );
+  }
+}
+
 render(<App />, document.getElementById('root'));
