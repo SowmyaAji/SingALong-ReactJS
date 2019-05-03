@@ -17,6 +17,7 @@ class App extends Component {
   }
 
   searchHandler = (evt) => {
+    this.setState({ songs: [] })
     this.searchQuery(evt.target.value);
 
   }
@@ -25,7 +26,8 @@ class App extends Component {
     const queryUrl = 'https://itunes.apple.com/search?media=music&limit=20&term=' + query;
     jsonp(queryUrl, null, (err, data) => {
       if (err) {
-        console.error(err.message);
+        console.error(err.message)
+        return <div>Sorry something went wrong! Please try something else</div>;
       } else {
         this.setState({ songs: data.results });
         console.log(data.results)
@@ -57,8 +59,8 @@ class App extends Component {
 
   render() {
     const songs = this.state.songs.map(song =>
-      <div onClick={this.selectSong.bind(this, song)} style={{ width: '200px', height: '300px', margin: '10px', background: '#F78DA7', textAlign: "center", display: "inline-block", border: "1px solid black" }}><p>Song: {song.trackName}</p>
-        <img src={song.artworkUrl100} alt="Album cover image" />
+      <div onClick={this.selectSong.bind(this, song)} style={{ width: '250px', height: '350px', margin: '10px', background: '#F78DA7', textAlign: "center", display: "inline-block", border: "1px solid black" }}><p>Song: {song.trackName}</p>
+        <img src={song.artworkUrl100} alt="Album cover" />
         <p>Artist: {song.artistName}</p>
         <p>Album: {song.collectionName}</p>
 
