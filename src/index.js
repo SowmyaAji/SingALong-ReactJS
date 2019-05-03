@@ -58,7 +58,7 @@ class App extends Component {
   render() {
     const songs = this.state.songs.map(song =>
       <div onClick={this.selectSong.bind(this, song)} style={{ width: '200px', height: '300px', margin: '10px', background: '#F78DA7', textAlign: "center", display: "inline-block", border: "1px solid black" }}><p>Song: {song.trackName}</p>
-        <img src={song.artworkUrl100} />
+        <img src={song.artworkUrl100} alt="Album cover image" />
         <p>Artist: {song.artistName}</p>
         <p>Album: {song.collectionName}</p>
 
