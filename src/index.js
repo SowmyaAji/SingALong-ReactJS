@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   searchHandler = (evt) => {
-    this.setState({ songs: [] })
+
     this.searchQuery(evt.target.value);
 
   }
@@ -74,6 +74,7 @@ class App extends Component {
         <input style={{ width: "400px", height: "80px", borderRadius: "20px", border: "1px solid black", fontSize: " 24px", textAlign: "center" }} type="text" onChange={this.searchHandler} placeholder="Pick a song, singer or album"
         />
         <div>
+          <p>Click on any to hear a short bit of it!</p>
           {this.hearSong()}
           {songs}
         </div>
