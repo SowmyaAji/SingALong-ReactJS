@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   searchQuery= (query) =>   {
-    const queryUrl = 'https://itunes.apple.com/search?media=music&limit=5&term=' + query;  
+    const queryUrl = 'https://itunes.apple.com/search?media=music&limit=25&term=' + query;  
   jsonp(queryUrl, null, (err, data) => {
       if (err) {
         console.error(err.message);
@@ -56,7 +56,7 @@ hearSong = () => {
 
   render() {
     const songs = this.state.songs.map(song => 
-    <div onClick={this.selectSong.bind(this,song)} style={{ width: '200px', background: 'yellow', textAlign: "center" }}><p>Song: {song.trackName}</p>
+    <div onClick={this.selectSong.bind(this,song)} style={{ width: '200px', height: "300px", background: '#F78DA7', textAlign: "center", display: "inline-block", border: "1px solid black" }}><p>Song: {song.trackName}</p>
           <img src={song.artworkUrl100}/>
           <p>Artist: {song.artistName}</p>
           <p>Album: {song.collectionName}</p>
@@ -67,11 +67,13 @@ hearSong = () => {
       
      
       <div>
-      <h1 style={{ textAlign: "center" }}>Sing-a-long</h1>
+      <h1 style={{ textAlign: "center", background: "#bf4d69", color: "white" }}>Sing-a-long</h1>
        <input type="text" onChange={this.searchHandler}
         />
+        <div>
         {this.hearSong()}
        {songs}
+       </div>
       
       </div>
     );
