@@ -63,16 +63,18 @@ class App extends Component {
         <h1 style={{ textAlign: "center", background: "#bf4d69", color: "white" }}>Sing-a-long</h1>
         <input style={{ width: "400px", height: "80px", borderRadius: "20px", border: "1px solid black", fontSize: " 24px", textAlign: "center" }} type="text" onChange={this.searchHandler} placeholder="Pick a song, singer or album"
         />
-        <p>Click on any to hear a short bit!</p>
+
 
         <div>
-          {this.hearSong()}
-          {songs}
+          <p style={{ fontSize: "20px" }}>Click on any to hear a short bit!</p>
+          <div>
+            {this.hearSong()}
+            {songs}
+          </div>
+
         </div>
-
-      </div>
-    );
-  }
-}
-
+        );
+      }
+    }
+    
 render(<App />, document.getElementById('root'));
