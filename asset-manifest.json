@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SingALong-ReactJS/static/css/main.170f56e8.chunk.css",
-    "main.js": "/SingALong-ReactJS/static/js/main.4e285e50.chunk.js",
-    "main.js.map": "/SingALong-ReactJS/static/js/main.4e285e50.chunk.js.map",
+    "main.js": "/SingALong-ReactJS/static/js/main.d1152580.chunk.js",
+    "main.js.map": "/SingALong-ReactJS/static/js/main.d1152580.chunk.js.map",
     "runtime~main.js": "/SingALong-ReactJS/static/js/runtime~main.b5c7caf3.js",
     "runtime~main.js.map": "/SingALong-ReactJS/static/js/runtime~main.b5c7caf3.js.map",
     "static/js/2.9e81544c.chunk.js": "/SingALong-ReactJS/static/js/2.9e81544c.chunk.js",
     "static/js/2.9e81544c.chunk.js.map": "/SingALong-ReactJS/static/js/2.9e81544c.chunk.js.map",
     "index.html": "/SingALong-ReactJS/index.html",
-    "precache-manifest.03bfba351ff3f81e7e7efd8a03ce9e05.js": "/SingALong-ReactJS/precache-manifest.03bfba351ff3f81e7e7efd8a03ce9e05.js",
+    "precache-manifest.09a13d1425bf50cb15af32da252c5502.js": "/SingALong-ReactJS/precache-manifest.09a13d1425bf50cb15af32da252c5502.js",
     "service-worker.js": "/SingALong-ReactJS/service-worker.js",
     "static/css/main.170f56e8.chunk.css.map": "/SingALong-ReactJS/static/css/main.170f56e8.chunk.css.map"
   }
