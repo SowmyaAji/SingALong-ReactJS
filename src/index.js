@@ -31,7 +31,7 @@ class App extends Component {
         this.setState({ songs: data.results });
       }
     });
-    return (<div><p>Like Hamlet says: Do you think I am easier to be played on than a pipe? Call me what instrument you will..</p></div>)
+    return (<div>Like Hamlet says: Do you think I am easier to be played on than a pipe? Call me what instrument you will..</div>);
   }
 
   selectSong = (song) => {
@@ -68,7 +68,7 @@ class App extends Component {
         </div>
 
         <div>
-          <p style={{ fontSize: "20px" }}>Click on any to hear a short bit!</p>
+          <p style={{ fontSize: "20px" }}>Click on any block to hear a short bit!</p>
         </div>
         {songs}
       </div>
