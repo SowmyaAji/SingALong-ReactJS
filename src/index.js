@@ -26,12 +26,12 @@ class App extends Component {
     const queryUrl = 'https://itunes.apple.com/search?media=music&limit=20&term=' + query;
     jsonp(queryUrl, null, (err, data) => {
       if (err) {
-        return <div>Sorry something went wrong! Please try something else</div>;
+        return (<div>Sorry something went wrong! Please try something else</div>);
       } else {
         this.setState({ songs: data.results });
       }
     });
-    return <div><p>Like Hamlet says: Do you think I am easier to be played on than a pipe? Call me what instrument you will..</p></div>
+    return (<div><p>Like Hamlet says: Do you think I am easier to be played on than a pipe? Call me what instrument you will..</p></div>)
   }
 
   selectSong = (song) => {
