@@ -31,7 +31,7 @@ class App extends Component {
         this.setState({ songs: data.results });
       }
     });
-    return (<div>Like Hamlet says: Do you think I am easier to be played on than a pipe? Call me what instrument you will..</div>);
+    return (<div> No song to Play </div>);
   }
 
   selectSong = (song) => {
