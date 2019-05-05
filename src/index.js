@@ -26,12 +26,11 @@ class App extends Component {
     const queryUrl = 'https://itunes.apple.com/search?media=music&limit=20&term=' + query;
     jsonp(queryUrl, null, (err, data) => {
       if (err) {
-        return (<div>Sorry something went wrong! Please try something else</div>);
+        return (<div>Sorry something went wrong!</div>);
       } else {
         this.setState({ songs: data.results });
       }
     });
-    return (<div> No song to Play </div>);
   }
 
   selectSong = (song) => {
@@ -61,7 +60,9 @@ class App extends Component {
 
       <div style={{ textAlign: "center" }}>
         <h1 style={{ textAlign: "center", background: "#bf4d69", color: "white" }}>Sing-a-long</h1>
+
         {this.hearSong()}
+
         <div>
           <input style={{ width: "400px", height: "80px", borderRadius: "20px", border: "1px solid black", fontSize: " 24px", textAlign: "center" }} type="text" onChange={this.searchHandler} placeholder="Pick a song, singer or album"
           />
