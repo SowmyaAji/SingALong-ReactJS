@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   searchQuery = (query) => {
-    const queryUrl = 'https://itunes.apple.com/search?media=music&limit=20&term=' + query;
+    const queryUrl = 'https://itunes.apple.com/search?media=music&limit=5&term=' + query;
     jsonp(queryUrl, null, (err, data) => {
       if (err) {
         return (<div>Sorry something went wrong!</div>);
@@ -48,10 +48,11 @@ class App extends Component {
       </div>
       );
     }
+    return (<div style={{ fontSize: "20px" }}><p>If music be the food of love, play on..</p></div>)
   }
   render() {
     const songs = this.state.songs.map(song =>
-      <div onClick={this.selectSong.bind(this, song)} style={{ width: '250px', height: '350px', margin: '10px', background: '#F78DA7', textAlign: "center", display: "inline-block", border: "1px solid black" }}><p>Song: {song.trackName}</p>
+      <div onClick={this.selectSong.bind(this, song)} style={{ width: '300px', height: '350px', margin: '10px', background: '#F78DA7', textAlign: "center", display: "inline-block", border: "1px solid black" }}><p>Song: {song.trackName}</p>
         <img src={song.artworkUrl100} alt="Album cover" />
         <p>Artist: {song.artistName}</p>
         <p>Album: {song.collectionName}</p>
@@ -69,7 +70,7 @@ class App extends Component {
         </div>
 
         <div>
-          <p style={{ fontSize: "20px" }}>Click on any block to hear a short bit!</p>
+          <p style={{ fontSize: "20px" }}>Click on any block to hear a short bit</p>
         </div>
         {songs}
       </div>
