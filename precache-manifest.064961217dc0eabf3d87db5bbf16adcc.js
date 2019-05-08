@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6afd39b7b56dab2d23b7fc55f774c66",
+    "revision": "8ba6d1ed8a7ccdde3061a959fed5b9ec",
     "url": "/SingALong-ReactJS/index.html"
   },
   {
-    "revision": "1b24305f2ec52a7ab71d",
+    "revision": "5708e5c20b6577a18166",
     "url": "/SingALong-ReactJS/static/css/main.170f56e8.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SingALong-ReactJS/static/js/2.9e81544c.chunk.js"
   },
   {
-    "revision": "1b24305f2ec52a7ab71d",
-    "url": "/SingALong-ReactJS/static/js/main.f21f7ca4.chunk.js"
+    "revision": "5708e5c20b6577a18166",
+    "url": "/SingALong-ReactJS/static/js/main.a1d3bfc7.chunk.js"
   },
   {
     "revision": "859bf199e2bf5d665a2f",
